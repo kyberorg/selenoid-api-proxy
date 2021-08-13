@@ -102,10 +102,6 @@ func deleteVideo(c *gin.Context) {
 			"message": "Token is invalid",
 		})
 	}
-
-	c.JSON(501, gin.H{
-		"message": "Not implemented yet",
-	})
 }
 
 func isTokenValid(token string) bool {
