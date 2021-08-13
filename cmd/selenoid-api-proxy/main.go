@@ -110,7 +110,7 @@ func isTokenValid(token string) bool {
 
 func doDeleteVideo(filename string) (*http.Response, error) {
 	deleteEndpoint :=
-		(*config.GetAppConfig().SelenoidApiUrl).String() + "/video" + filename + ".mp4"
+		(*config.GetAppConfig().SelenoidApiUrl).String() + "/video/" + filename + ".mp4"
 	//Create Request
 	req, err := http.NewRequest(http.MethodDelete, deleteEndpoint, nil)
 	if err != nil {
