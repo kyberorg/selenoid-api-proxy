@@ -4,7 +4,7 @@ Tiny web server, which runs in front of Selenoid API and provides token-based au
 ## Usage
 * Delete video
 ```shell
-curl -X DELETE -H "X-Token:token-here" https://grid-api.kyberorg.io/video/yalsee-dev-130821-1012
+curl -X DELETE -H "X-Token:token-here" https://grid-api.kyberorg.io/videos/yalsee-dev-130821-1012
 ```
 
 ## Run

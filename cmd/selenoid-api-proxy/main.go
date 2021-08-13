@@ -16,7 +16,7 @@ var httpClient = &http.Client{}
 func main() {
 	r := gin.Default()
 	r.GET("/ping", ping)
-	r.DELETE("/video/:filename", deleteVideo)
+	r.DELETE("/videos/:filename", deleteVideo)
 
 	selenoidApiAvailable, selenoidStatusMessage := isSelenoidApiAvailable()
 	if !selenoidApiAvailable {
